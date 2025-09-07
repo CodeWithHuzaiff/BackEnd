@@ -49,3 +49,10 @@ app.get("/:username/:id",(req,res)=>{
     let {username,id}=req.params
     res.send(`Responce sended to ${username} at ${id}`)
 })
+
+app.get("/search",(req,res)=>{
+    let {q,age}=req.query;
+    console.log(q);
+    res.send(`successfully responded as ${q} ${age}`)
+    
+})
