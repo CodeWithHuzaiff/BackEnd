@@ -9,17 +9,17 @@ app.listen(port,()=>{
 });
 
 
-// app.use((req,res)=>{
-//     console.log("request received..");
-//     // console.log(res);
-//     // res.send("This is basic Response")
-//     const data={
-//         name:"Huzaif",
-//         age:19,
-//         cgpa:9.8
-//     }
-//     res.send(data)
-// });
+app.use((req,res)=>{
+    console.log("request received..");
+    // console.log(res);
+    // res.send("This is basic Response")
+    const data={
+        name:"Huzaif",
+        age:19,
+        cgpa:9.8
+    }
+    res.send(data)
+});
 
 app.get('/',(req,res)=>{
     res.send({name:"cat",
